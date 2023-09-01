@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+.line{
+    width: 100%;
+    border-bottom: 1rem dashed lightgray;
+    margin: 1rem auto;
+}
+.my-table{
+   margin: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.my-table table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* 列宽等分 */
+    background: #fff;
+}
+.my-table table>caption>input{
+    background-image: url('https://static.runoob.com/images/mix/searchicon.png'); /* 搜索按钮 */
+    background-position: 10px 12px; /* 定位搜索按钮 */
+    background-size: 16px 16px;
+    background-repeat: no-repeat; /* 不重复图片 */
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 12px 20px 12px 36px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px; 
+}
+.my-table tr{
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+.my-table tr:hover{
+    border:2px solid orange;
+}
+.my-table th{
+    text-transform:uppercase;
+}
+.my-table th, td{
+    border: 1px solid #999;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 5px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>custom table(html5)</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <div class="my-table">
+      <table>
+        <caption>
+          <h3>custom table</h3>
+          <input type="text" id="myInput" onkeyup="searchInput()" onchange="searchInputEnd()"  placeholder="搜索...">
+        </caption>
+        <tbody>
+        </tbody>
+      </table>
+      <button onclick="addLast()" style="width: fit-content;margin: 1em;">末尾添加一行，内容自动填充</button>
+    </div>
+
+    
+    
+    <div class="section1">
+      <nav>
+        <a href="../zhengjiajun_code_1/zhengjiajun_code_1.html">DEMO1（网页实现）</a> |
+        <a href="../zhengjiajun_code_2/zhengjiajun_code_2.html">DEMO2（人物介绍）</a> |
+        <a href="../zhengjiajun_code_3/zhengjiajun_code_3.html">DEMO3（表格）</a>
+        </nav>
+      <h1>default</h1>
+      <h2>to-do-list</h2>
+      <!-- <form action="" method="get"> -->
+      <div>
+        <input list="types" name="type" onchange="updateType()" />
+        <datalist id="types">
+          <option value="work"></option>
+          <option value="study"></option>
+          <option value="reading"></option>
+          <option value="coding"></option>
+          <option value="exercise"></option>
+        </datalist>
+
+        <!-- <input type="submit" value="选择类型" />
+      </form> -->
+      </div>
+    </div>
+    <div style="padding: 20px; background: rgba(221, 160, 221, 0.453)">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+      minima. Beatae odio quae dolor iure laboriosam placeat inventore, maiores
+      necessitatibus? Voluptatum, quam corporis? Modi, harum recusandae quidem
+      veniam veritatis vel. Nam, beatae? Et neque voluptatibus similique enim
+      laborum accusantium. Rerum! Porro molestias dolores eaque officiis tenetur
+      odio iure accusamus fugiat?
+      <aside>
+        <p><pre>you can use <span><</span>aside<span>></span> to write some notes</pre></p>
+      </aside>
+      Ipsa molestiae autem, cum facilis suscipit delectus error magnam amet?
+      Minus temporibus deserunt quisquam tempore neque, perferendis ut itaque
+      ducimus. Repudiandae cupiditate inventore harum ullam ex repellat quis
+      dolorum sapiente. Et libero architecto ipsa, dolor aliquid optio natus
+      harum voluptates. Eos, ipsa? Enim fugit expedita sequi possimus maxime
+      quae odio?
+      <pre>
+        Lorem, ipsum dolor.
+
+        //原格式输出
+        Quae, in sint!
+        Magni, blanditiis perferendis?
+      </pre>
+      <xmp>
+        //代码输出
+        function updateType() {
+          let type = document.getElementsByName("type")[0].value;
+          let typeLine = document
+            .getElementsByClassName("section1")[0]
+            .getElementsByTagName("h1")[0];
+          typeLine.innerHTML = type;
+        }
+      </xmp>
+    </div>
+  </body>
+</html>
+
+<script src="demo.js"></script>
